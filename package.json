@@ -20,7 +20,14 @@
     "react-router-dom": "^7.18.4",
     "express": "^5.2.1",
     "axios": "^1.20.0",
-    "@tanstack/react-query": "^5.103.1"
+    "@tanstack/react-query": "^5.103.1",
+    "cors": "^2.8.6",
+    "oracledb": "^7.0.1",
+    "@types/request": "^2.48.13",
+    "@types/express": "^5.0.6",
+    "@types/oracledb": "^7.0.3",
+    "@types/cors": "^2.8.19",
+    "request": "^2.88.2"
   },
   "scripts": {
     "start": "react-scripts start",

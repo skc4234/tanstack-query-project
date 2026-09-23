@@ -4,6 +4,14 @@ import './App.css';
 import Header from "./components/main/Header";
 import Home from "./components/main/Home";
 import Footer from "./components/main/Footer";
+import FoodList from "./components/food/FoodList";
+import FoodDetail from "./components/food/FoodDetail";
+import BoardList from "./components/board/BoardList";
+import BoardInsert from "./components/board/BoardInsert";
+import BoardDetail from "./components/board/BoardDetail";
+import BoardUpdate from "./components/board/BoardUpdate";
+import BoardDelete from "./components/board/BoardDelete";
+import YoutubeFind from "./components/youtube/YoutubeFind";
 /*
      TanStack-Query : Next.js는 변경 사항 없이 구조만 변경
      - 개념: 서버에서 데이터를 가지고 온다
@@ -64,6 +72,13 @@ import Footer from "./components/main/Footer";
 
        ==> Query 설정: index.tsx
        ==> component에서 값을 읽어서 출력
+
+       <Router> :
+       <Routes> : @Controller
+       <Route>  : @GetMapping, @PostMapping 등
+
+       <Header /> => Header()
+       <Footer /> => Footer()
  */
 function App() {
   return (
@@ -71,6 +86,14 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="/food/list" element={<FoodList />}/>
+          <Route path="/food/detail/:no" element={<FoodDetail />}/>
+          <Route path="/board/list" element={<BoardList />}/>
+          <Route path="/board/insert" element={<BoardInsert />}/>
+          <Route path="/board/detail/:no" element={<BoardDetail />}/>
+          <Route path="/board/update/:no" element={<BoardUpdate />}/>
+          <Route path="/board/delete/:no" element={<BoardDelete />}/>
+          <Route path="/youtube/find" element={<YoutubeFind />}/>
         </Routes>
         <Footer/>
       </Router>

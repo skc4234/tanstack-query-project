@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Header(){
     return (
         <header className="header">
@@ -10,7 +12,7 @@ function Header(){
                     <a href="#">맛집</a>
 
                     <div className="sub-menu">
-                        <a href="#">맛집</a>
+                        <Link to={"/food/list"}>맛집</Link>
                         <a href="#">주변 맛집</a>
                         <a href="#">인기 맛집</a>
                         <a href="#">평점 높은 맛집</a>
@@ -40,8 +42,8 @@ function Header(){
                     <a href="#">커뮤니티</a>
 
                     <div className="sub-menu">
-                        <a href="#">자유게시판</a>
-                        <a href="#">챗봇</a>
+                        <a href="/board/list">자유게시판</a>
+                        <Link to={"/youtube/find"}>Youtube검색</Link>
                     </div>
                 </div>
                 <div className="nav-item">
